@@ -1,0 +1,7 @@
+export const FETCH_POSTS_START = "FETCH_POSTS_START";
+export const FETCH_POSTS_FAILURE = "FETCH_POSTS_FAILURE";
+export const FETCH_POSTS_SUCCESS = "FETCH_POSTS_SUCCESS";
+
+export const ADD_POST = "ADD_POST";
+export const REMOVE_POST = "REMOVE_POST";
+export const CLEAR_POSTS = "CLEAR_POSTS";

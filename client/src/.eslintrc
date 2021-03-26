@@ -1,0 +1,22 @@
+{
+  "extends": ["react-app", "plugin:import/react"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
+  "rules": {
+    "no-redeclare": "warn",
+    "no-unused-vars": "warn",
+    "no-duplicate-imports": "warn",
+    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ]
+  }
+}

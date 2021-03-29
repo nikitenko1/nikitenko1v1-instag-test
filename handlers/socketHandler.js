@@ -2,15 +2,15 @@
 // to one room: // socket.to("others").emit("an event", { some: "data" });
 module.exports.sendNotification = (req, notification) => {
   const io = req.app.get("socketio");
-  io.sockets.in(notification.receiver).emit("newNotification", notification);
+  io.sockets.to(notification.receiver).emit("newNotification", notification);
 };
 
 module.exports.sendPost = (req, post, receiver) => {
   const io = req.app.get("socketio");
-  io.sockets.in(receiver).emit("newPost", post);
+  io.sockets.to(receiver).emit("newPost", post);
 };
 
 module.exports.deletePost = (req, postId, receiver) => {
   const io = req.app.get("socketio");
-  io.sockets.in(receiver).emit("deletePost", postId);
+  io.sockets.to(receiver).emit("deletePost", postId);
 };

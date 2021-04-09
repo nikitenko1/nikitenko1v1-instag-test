@@ -17,16 +17,16 @@ const {
 } = require("../handlers/controllerUtils");
 const filters = require("../utils/imageFilters");
 
-module.exports.createPost = async (req, res, next) => {};
+exports.createPost = async (req, res, next) => {};
 
-module.exports.deletePost = async (req, res, next) => {};
+exports.deletePost = async (req, res, next) => {};
 
-module.exports.retrievePost = async (req, res, next) => {};
+exports.retrievePost = async (req, res, next) => {};
 
-module.exports.votePost = async (req, res, next) => {};
+exports.votePost = async (req, res, next) => {};
 
-module.exports.retrievePostFeed = async (req, res, next) => {};
+exports.retrievePostFeed = async (req, res, next) => {};
 
-module.exports.retrieveSuggestedPosts = async (req, res, next) => {};
+exports.retrieveSuggestedPosts = async (req, res, next) => {};
 
-module.exports.retrieveHashtagPosts = async (req, res, next) => {};
+exports.retrieveHashtagPosts = async (req, res, next) => {};
